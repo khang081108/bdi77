@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bình Định – Trang giới thiệu</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(to bottom, #ffffff, #eaf6ff);
+            color: blue;
+        }
+
+        header {
+            background-image: url("logo.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 330px;
+            position: relative;
+            background-color: #eaf6ff;
+        }
+
+        main {
+            max-width: 1150px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 32px;
+        }
+
+        .item {
+            background-color: white;
+            border-radius: 20px;
+            overflow: hidden;
+            text-decoration: none;
+            color: blue;
+            box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+            transition: 0.35s ease;
+        }
+
+        .item:hover {
+            transform: translateY(-10px);
+        }
+
+        .item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .item div {
+            padding: 24px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        /* ===== KHUNG NỘI TUYẾN ===== */
+        .inline-box {
+            background: #ffffff;
+            border-left: 6px solid #0a3d62;
+            padding: 20px;
+            margin: 50px 0;
+            border-radius: 12px;
+        }
+
+        /* ===== TABLE ===== */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 40px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #0a3d62;
+        }
+
+        th, td {
+            padding: 14px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #0a3d62;
+            color: white;
+        }
+
+        /* ===== FORM ===== */
+        form {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            margin: 50px 0;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            background: #0a3d62;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #0a3d62;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            margin-top: 80px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header></header>
+
+<main>
+
+    <!-- MENU -->
+    <div class="menu">
+        <a href="vitri.html" class="item">
+            <img src="vitri1.jpg">
+            <div>Vị trí địa lý</div>
+        </a>
+
+        <a href="lichsu.html" class="item">
+            <img src="lichsu.jpg">
+            <div>Lịch sử</div>
+        </a>
+
+        <a href="vanhoa.html" class="item">
+            <img src="vanhoa.jpg">
+            <div>Văn hóa</div>
+        </a>
+
+        <a href="dulich.html" class="item">
+            <img src="dulich.jpg">
+            <div>Du lịch</div>
+        </a>
+
+        <a href="amthuc.html" class="item">
+            <img src="amthuc.jpg">
+            <div>Ẩm thực</div>
+        </a>
+    </div>
+
+    <!-- KHUNG NỘI TUYẾN -->
+    <div class="inline-box">
+        <h2>Giới thiệu nhanh</h2>
+        <p>Bình Định là tỉnh ven biển miền Trung, nổi tiếng với võ cổ truyền, tháp Chăm và ẩm thực đặc sắc.</p>
+    </div>
+
+    <!-- IFRAME -->
+    <h2>Bản đồ Bình Định</h2>
+    <iframe 
+        src="https://www.google.com/maps?q=Bình+Định&output=embed"
+        width="100%" 
+        height="350"
+        style="border-radius:16px; border:none;">
+    </iframe>
+
+    <!-- TABLE -->
+    <h2>Thông tin cơ bản</h2>
+    <table>
+        <tr>
+            <th>Nội dung</th>
+            <th>Thông tin</th>
+        </tr>
+        <tr>
+            <td>Diện tích</td>
+            <td>6.066 km²</td>
+        </tr>
+        <tr>
+            <td>Dân số</td>
+            <td>~1,5 triệu người</td>
+        </tr>
+        <tr>
+            <td>Thành phố</td>
+            <td>Quy Nhơn</td>
+        </tr>
+    </table>
+
+    <!-- FORM -->
+    <h2>Liên hệ</h2>
+    <form>
+        <label>Họ và tên:</label>
+        <input type="text" placeholder="Nhập họ tên">
+
+        <label>Email:</label>
+        <input type="email" placeholder="Nhập email">
+
+        <label>Nội dung góp ý:</label>
+        <textarea rows="4" placeholder="Nhập nội dung"></textarea>
+
+        <button type="submit">Gửi</button>
+    </form>
+
+</main>
+
+<footer>
+    <p>© 2025 | Trang giới thiệu tỉnh Bình Định</p>
+</footer>
+
+</body>
+</html>
